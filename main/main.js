@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // js alasan kenapa start jika todak perlu jadikan coment saja
 window.addEventListener('resize', function () {
     const container = document.getElementById('animasi1');
-    if (window.innerWidth <= 390) {
+    if (window.innerWidth <= 412) {
         container.classList.add('flex-wrap');
     } else {
         container.classList.remove('flex-wrap');
