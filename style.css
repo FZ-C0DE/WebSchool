@@ -1,0 +1,9 @@
+/* Gaya untuk memastikan div "Berita" tampil baik pada perangkat mobile */
+@media (max-width: 390px) {
+    #berita .container {
+      padding: 0 1rem;
+    }
+  }
+  
+
+

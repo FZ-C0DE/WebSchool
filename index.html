@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body>
+
+    <!-- NVBAR -->
+    <div id="navbar-top" class="w-full bg-white py-8 md:py-2 relative">
+        <div class="container mx-auto px-4 md:px-0 bg-white md:py-4 py-0">
+            <div class="flex flex-wrap justify-between items-center">
+
+                <!-- Bagian kanan Nama Sekolah -->
+                <div class="">
+                    <!-- Ganti dengan nama sekolah mu di h2 -->
+                    <h2 class="font-bold text-blue-600 text-2xl md:text-4xl uppercase">
+                        Sekolah<span class="text-slate-800">ONline</span>
+                    </h2>
+                </div>
+                <!-- Bagian kanan Nama Sekolah -->
+
+                <!-- Bagian Tengah Navbar -->
+                <div id="navbarMenu" class="hidden md:block">
+                    <ul
+                        class="bg-blue-50 text-end px-4 md:px-0 space-y-2 md:space-y-0 md:py-0 py-6 md:static absolute top-full left-0 right-0 md:flex md:space-x-6 text-lg font-medium text-slate-800 capitalize z-50">
+                        <li>
+                            <a href="#hero" class="hover:text-blue-400 text-blue-600">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="hover:text-blue-400">About</a>
+                        </li>
+                        <li>
+                            <a href="#Jurusan" class="hover:text-blue-400">Jurusan</a>
+                        </li>
+                        <li>
+                            <a href="#fasilitas" class="hover:text-blue-400">Fasilitas</a>
+                        </li>
+                        <li>
+                            <a href="#Extrakulikuler" class="hover:text-blue-400">Extrakulikuler</a>
+                        </li>
+                        <li>
+                            <a href="#dokumentasi" class="hover:text-blue-400">Dokumentasi</a>
+                        </li>
+                        <li>
+                            <a href="#berita" class="hover:text-blue-400">Berita</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Bagian Tengah Navbar -->
+
+                <!-- bagian tombol kanan Kontak -->
+                <div class="hidden">
+                    <a href="#kontak" id="kontak"
+                        class="bg-blue-800 py-3 px-8 rounded-full font-semibold text-white border border-blue-600 hover:bg-transparent hover:text-blue-600">Contact</a>
+                </div>
+                <!-- bagian tombol kontak Kontak -->
+
+                <!-- hamburger menu -->
+                <button id="burgerMenu" class="space-y-2 right-4 absolute md:hidden">
+                    <span class="bg-slate-800 w-[30px] h-[2px] block"></span>
+                    <span class="bg-slate-800 w-[30px] h-[2px] block"></span>
+                    <span class="bg-slate-800 w-[30px] h-[2px] block"></span>
+                </button>
+                <!-- hamburger menu end -->
+
+            </div>
+        </div>
+    </div>
+    <!-- NVBAR -->
+
+    <!-- Hero Section -->
+    <div id="hero" class="w-full bg-white py-20 md:mb-32 mb-0 md:py-54">
+        <div class="container mx-auto px-2">
+            <div class="w-[90%] md:flex mx-auto flex-wrap">
+
+                <!-- bagian kiri -->
+                <div class="w-full md:w-1/2 relative md:order-1 mb-4 md:mb-0">
+                    <div class="max-w-4xl flex justify-end">
+                        <div class="w-full md:w-[500px] h-auto md:h-[420px] rounded-xl overflow-hidden">
+                            <!-- Ganti dengan gambar sekolah di img -->
+                            <img src="../public/img/HeroImage.jpg" alt="" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+
+                    <!-- kata-kata -->
+                    <div
+                        class="hidden md:flex bg-white opacity-90 shadow-md p-2 rounded-md flex gap-2 absolute top-5 -right-20">
+                        <div class="w-8 h-8 rounded-full overflow-hidden">
+                            <!-- gambar yang berada di pesan tepatnya di img-->
+                            <img src="../public/imgmassage/ppsmall.jpg" alt="" class="object-cover w-full h-full" />
+                        </div>
+
+                        <div class="hidden md:block">
+                            <div class="flex mb-2">
+                                <!-- Bintang rating -->
+                                <x-star-icon />
+                                <x-star-icon />
+                                <x-star-icon />
+                                <x-star-icon />
+                                <x-star-icon />
+                            </div>
+
+                            <p class="w-32 text-xs font-bold text-slate-800 capitalize mb-2">
+                                Jika ingin sukses Belajarlah bersabar
+                            </p>
+                            <p class="text-sm font-normal to-slate-500">CEO Mario Lexis</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- bagian kiri -->
+
+                <!-- bagian kanan -->
+                <div class="w-full md:w-1/2">
+                    <div class="w-full mb-10">
+                        <!-- Ubah nama Sekolah di h1 -->
+                        <h1 class="font-extrabold text-3xl md:text-6xl mt-4 md:mt-0 text-slate-800">
+                            SEKOLAH <span class="text-blue-600">ONLINE</span> WEB DEVELOPPER
+                        </h1>
+                    </div>
+                    <div class="mb-10">
+                        <!-- berikan kata-kata di paragraf dibawah -->
+                        <p class="text-slate-500 font-normal md:mt-4 leading-relaxed capitalize">
+                            sekolah adalah tempat mencetak penerus bangsa yang berkualitas
+                            dan berprestasi di segala bidang yang dapat bersaing di dunia
+                            internasional
+                        </p>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-2 mb-8 md:mt-10">
+                        <!-- Berikan links sekolah di href -->
+                        <a href="https://maps.google.com/" target="_blank"
+                            class="py-4 px-8 border border-blue-600 hover:bg-transparent hover:text-blue-600 bg-blue-600 text-white rounded-full flex gap-2 items-center justify-between">
+                            <span>Get Started</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </a>
+                        <!-- Berikan links sekolah di href -->
+                        <a href="https://drive.google.com" target="_blank"
+                            class="py-4 px-8 bg-white border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-500 rounded-full flex gap-2 items-center justify-between">
+                            <span>Video</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-2 items-center mb-4 md:mb-20">
+                        <p class="font-semibold text-slate-700 text-sm capitalize">
+                            We are in Social Media :
+                        </p>
+                        <div class="flex gap-2 space-x-3 mb-4">
+                            <!-- FACEBOOK -->
+                            <a href="https://facebook.com/sekolah" target="_blank">
+                                <svg class="w-5 h-5 fill-slate-500 hover:fill-blue-600 hover:-translate-y-0.5"
+                                    role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Facebook</title>
+                                    <path
+                                        d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
+                                </svg>
+                            </a>
+                            <!-- TWITTER -->
+                            <a href="https://twitter.com/sekolah" target="_blank">
+                                <svg class="w-5 h-5 fill-slate-500 hover:fill-slate-800 hover:-translate-y-0.5"
+                                    role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>X</title>
+                                    <path
+                                        d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+                                </svg>
+                            </a>
+                            <!-- INSTAGRAM -->
+                            <a href="https://instagram.com/sekolah" target="_blank">
+                                <svg class="w-5 h-5 fill-slate-500 hover:fill-red-600 hover:-translate-y-0.5" role="img"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Instagram</title>
+                                    <path
+                                        d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+                                </svg>
+                            </a>
+                            <!-- YOUTUBE -->
+                            <a href="https://youtube.com/sekolah" target="_blank">
+                                <svg class="w-5 h-5 fill-slate-500 hover:fill-red-600 hover:-translate-y-0.5" role="img"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>YouTube</title>
+                                    <path
+                                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- bagian kanan -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section -->
+
+    <!-- About start -->
+    <div id="about" class="w-full bg-blue-600 py-20 md:py-28 lg:mb-28">
+        <div class="container mx-auto px-4 sm:px-2">
+            <div class="max-w-xl mb-16 text-center mx-auto">
+                <h1 class="font-bold text-white text-2xl md:text-4xl capitalize mb-6">
+                    Profil <span class="text-white">Sekolah</span>
+                </h1>
+            </div>
+
+            <!-- content utama -->
+            <div class="md:flex gap-12">
+                <div class="md:w-1/2 px-4 sm:px-2 mb-4 md:mb-0">
+                    <div class="w-full md:h-96 overflow-hidden rounded-md">
+                        <img src="../public/AboutImg/Rectangle 13.png" alt="" class="w-full h-full object-cover" />
+                        <!-- Ganti dengan gambar kepala sekolah juga boleh -->
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 px-4 sm:px-2">
+                    <h1 class="text-2xl mb-8 max-w-sm font-bold text-white">
+                        Sambutan Kepala Sekolah SekolahOnline
+                    </h1>
+                    <h3 class="mb-4 font-semibold italic text-xl text-white">
+                        Assalamualaikum wr wb
+                    </h3>
+                    <p class="max-w-md text-white font-normal mb-2 leading-relaxed">
+                        Sekolah adalah tempat mencetak penerus bangsa yang berkualitas dan
+                        berprestasi di segala bidang yang dapat bersaing di dunia
+                        internasional
+                    </p>
+                    <p class="max-w-md text-white font-normal mb-10 leading-relaxed">
+                        dan Sekolah adalah tempat anak-anak mendapatkan dukungan untuk
+                        melengkapi pembelajarannya di sekolah
+                    </p>
+
+                    <button
+                        class="flex gap-2 font-semibold bg-white text-black py-3 px-8 items-center rounded-full border border-white hover:bg-transparent hover:text-white transition-all duration-300 md:mb-20">
+                        <span>Baca Selanjutnya</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1-18 0Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- content utama -->
+        </div>
+    </div>
+    <!-- About end -->
+
+    <!-- BAGIAN CONTENT ALASAN KENAPA HARUS SEKOLAH -->
+    <div id="fasilitas" class="w-full bg-white py-20 mb-3 lg:mb-28">
+        <div class="container mx-auto px-2 md:px-0">
+            <div class="max-w-xl mb-20 text-center mx-auto">
+                <h1 class="font-bold text-slate-800 text-3xl md:text-4xl capitalize mb-6">
+                    Kenapa Harus <span class="text-blue-600">Sekolah Disini</span>
+                </h1>
+                <p class="text-slate-500 capitalize">
+                    Alasan kenapa harus memilih untuk bergabung dengan di SekolahOnline
+                </p>
+            </div>
+
+            <!-- Content icon utama -->
+            <div id="animasi1"
+                class="w-full flex flex-wrap md:flex-nowrap space-x-0 md:space-x-2 space-y-3 md:space-y-0 md:mb-20">
+                <!-- card 1 start -->
+                <div
+                    class="w-full md:w-1/4 bg-slate-300 p-4 rounded-md shadow-md justify-center items-center text-center flex flex-col">
+                    <div class="mb-4">
+                        <img src="../public/Alasanimg/computer.png" alt=""
+                            class="w-16 hover:scale-110 transition-all duration-500" />
+                    </div>
+                    <div class="space-y-3">
+                        <a href="x" class="font-semibold text-xl text-slate-800 hover:text-blue-600">Fasilitas
+                            Lengkap</a>
+                        <p class="text-slate-500">
+                            Penunjang belajar dengan kualitas terbaik
+                        </p>
+                    </div>
+                </div>
+                <!-- card 1 end -->
+
+                <!-- card 2 start -->
+                <div
+                    class="w-full md:w-1/4 bg-slate-300 p-4 rounded-md shadow-md justify-center items-center text-center flex flex-col">
+                    <div class="mb-4">
+                        <img src="../public/Alasanimg/bank.png" alt=""
+                            class="w-16 hover:scale-110 transition-all duration-500" />
+                    </div>
+                    <div class="space-y-3">
+                        <a href="x" class="font-semibold text-xl text-slate-800 hover:text-blue-600">Lingkungan
+                            Nyaman</a>
+                        <p class="text-slate-500">
+                            Berada di lingkungan yang nyaman dan asri
+                        </p>
+                    </div>
+                </div>
+                <!-- card 2 end -->
+
+                <!-- card 3 start -->
+                <div
+                    class="w-full md:w-1/4 bg-slate-300 p-4 rounded-md shadow-md justify-center items-center text-center flex flex-col">
+                    <div class="mb-4">
+                        <img src="../public/Alasanimg/team.png" alt=""
+                            class="w-16 hover:scale-110 transition-all duration-500" />
+                    </div>
+                    <div class="space-y-3">
+                        <a href="x" class="font-semibold text-xl text-slate-800 hover:text-blue-600">Pengajar
+                            Kompeten</a>
+                        <p class="text-slate-500">
+                            Guru yang terbaik dengan pengalaman yang kompeten
+                        </p>
+                    </div>
+                </div>
+                <!-- card 3 end -->
+
+                <!-- card 4 start -->
+                <div
+                    class="w-full md:w-1/4 bg-slate-300 p-4 rounded-md shadow-md justify-center items-center text-center flex flex-col">
+                    <div class="mb-4">
+                        <img src="../public/Alasanimg/team (1).png" alt=""
+                            class="w-16 hover:scale-110 transition-all duration-500" />
+                    </div>
+                    <div class="space-y-3">
+                        <a href="x" class="font-semibold text-xl text-slate-800 hover:text-blue-600">Kerja Sama yang
+                            Luas</a>
+                        <p class="text-slate-500">
+                            Dapat kesempatan kerja yang lebih terjamin
+                        </p>
+                    </div>
+                </div>
+                <!-- card 4 end -->
+            </div>
+            <!-- Content icon utama end -->
+        </div>
+    </div>
+    <!-- BAGIAN CONTENT ALASAN KENAPA HARUS SEKOLAH -->
+
+    <!-- Section Jurusan start -->
+    <div id="Jurusan" class="w-full py-20 bg-blue-100">
+        <div class="container mx-auto px-4 md:px-2">
+            <!-- Header -->
+            <div class="mx-auto text-center mb-16 space-y-4 max-w-xl">
+                <h2 class="font-bold text-slate-800 text-2xl md:text-4xl capitalize">
+                    Jurusan Di <span class="text-blue-600">Sekolah ini</span>
+                </h2>
+                <p class="text-slate-500 capitalize px-2 md:px-0">
+                    Pilihan program keahlian di sekolah ini
+                </p>
+            </div>
+            <!-- Header end-->
+
+            <!-- content card -->
+            <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
+                <!-- card Teknik Komputer Jaringan-->
+                <div
+                    class="col-span-1 bg-gradient-to-r from-blue-600 to-blue-700 rounded-md p-4 flex flex-col items-center text-center">
+                    <div class="w-10 h-10 bg-white flex justify-center items-center rounded-md mb-4">
+                        <img src="../public/jurusan/TeknikKomputer.png" alt="" width="70%" />
+                    </div>
+                    <a href="" class="block font-bold text-white hover:text-blue-200 text-lg mb-2">Teknik Komputer dan
+                        Jaringan</a>
+                    <a href="" class="font-normal text-sm text-slate-200">Details</a>
+                </div>
+                <!-- card Teknik Komputer Jaringan end -->
+
+                <!-- card perhotelan-->
+                <div
+                    class="col-span-1 bg-gradient-to-r from-blue-600 to-blue-700 rounded-md p-4 flex flex-col items-center text-center">
+                    <div class="w-10 h-10 bg-white flex justify-center items-center rounded-md mb-4">
+                        <img src="../public/jurusan/perhotelan.png" alt="" width="70%" />
+                    </div>
+                    <a href="" class="block font-bold text-white hover:text-blue-200 text-lg mb-2">Perhotelan</a>
+                    <a href="" class="font-normal text-sm text-slate-200">Details</a>
+                </div>
+                <!-- card perhotelan end -->
+
+                <!-- card Rekayasa perangkat lunak -->
+                <div
+                    class="col-span-1 bg-gradient-to-r from-blue-600 to-blue-700 rounded-md p-4 flex flex-col items-center text-center">
+                    <div class="w-10 h-10 bg-white flex justify-center items-center rounded-md mb-4">
+                        <img src="../public/jurusan/RPL.png" alt="" width="70%" />
+                    </div>
+                    <a href="" class="block font-bold text-white hover:text-blue-200 text-lg mb-2">Rekayasa Perangkat
+                        Lunak</a>
+                    <a href="" class="font-normal text-sm text-slate-200">Details</a>
+                </div>
+                <!-- card Rekayasa perangkat lunak end -->
+
+                <!-- card Arsitektur -->
+                <div
+                    class="col-span-1 bg-gradient-to-r from-blue-600 to-blue-700 rounded-md p-4 flex flex-col items-center text-center">
+                    <div class="w-10 h-10 bg-white flex justify-center items-center rounded-md mb-4">
+                        <img src="../public/jurusan/Arsitektur.png" alt="" width="70%" />
+                    </div>
+                    <a href="" class="block font-bold text-white hover:text-blue-200 text-lg mb-2">Arsitektur</a>
+                    <a href="" class="font-normal text-sm text-slate-200">Details</a>
+                </div>
+                <!-- card Arsitektur end -->
+
+                <!-- card Teknik Elektronika Industri -->
+                <div
+                    class="col-span-1 bg-gradient-to-r from-blue-600 to-blue-700 rounded-md p-4 flex flex-col items-center text-center">
+                    <div class="w-10 h-10 bg-white flex justify-center items-center rounded-md mb-4">
+                        <img src="../public/jurusan/Teknikindustri.png" alt="" width="70%" />
+                    </div>
+                    <a href="" class="block font-bold text-white hover:text-blue-200 text-lg mb-2">Teknik Elektronika
+                        Industri</a>
+                    <a href="" class="font-normal text-sm text-slate-200">Details</a>
+                </div>
+                <!-- card Teknik Elektronika Industri end -->
+
+                <!-- card Teknik Audio Video -->
+                <div
+                    class="col-span-1 bg-gradient-to-r from-blue-600 to-blue-700 rounded-md p-4 flex flex-col items-center text-center">
+                    <div class="w-10 h-10 bg-white flex justify-center items-center rounded-md mb-4">
+                        <img src="../public/jurusan/TeknikAudio.png" alt="" width="70%" />
+                    </div>
+                    <a href="" class="block font-bold text-white hover:text-blue-200 text-lg mb-2">Teknik Audio
+                        Video</a>
+                    <a href="" class="font-normal text-sm text-slate-200">Details</a>
+                </div>
+                <!-- card Teknik Audio Video end -->
+
+                <!-- card Teknik Instalasi Tenaga Listrik -->
+                <div
+                    class="col-span-1 bg-gradient-to-r from-blue-600 to-blue-700 rounded-md p-4 flex flex-col items-center text-center">
+                    <div class="w-10 h-10 bg-white flex justify-center items-center rounded-md mb-4">
+                        <img src="../public/jurusan/TITL.png" alt="" width="70%" />
+                    </div>
+                    <a href="" class="block font-bold text-white hover:text-blue-200 text-lg mb-2">Teknik Instalasi
+                        Tenaga Listrik</a>
+                    <a href="" class="font-normal text-sm text-slate-200">Details</a>
+                </div>
+                <!-- card Teknik Instalasi Tenaga Listrik end -->
+
+                <!-- card Teknik Kendaraan Ringan Otomotif -->
+                <div
+                    class="col-span-1 bg-gradient-to-r from-blue-600 to-blue-700 rounded-md p-4 flex flex-col items-center text-center">
+                    <div class="w-10 h-10 bg-white flex justify-center items-center rounded-md mb-4">
+                        <img src="../public/jurusan/TeknikOtomotif.png" alt="" width="80%" />
+                    </div>
+                    <a href="" class="block font-bold text-white hover:text-blue-200 text-lg mb-2">Teknik Kendaraan
+                        Ringan Otomotif</a>
+                    <a href="" class="font-normal text-sm text-slate-200">Details</a>
+                </div>
+                <!-- card Teknik Kendaraan Ringan Otomotif end -->
+
+                <!-- card Permodelan dan Informasi Bangunan -->
+                <div
+                    class="col-span-1 bg-gradient-to-r from-blue-600 to-blue-700 rounded-md p-4 flex flex-col items-center text-center">
+                    <div class="w-10 h-10 bg-white flex justify-center items-center rounded-md mb-4">
+                        <img src="../public/jurusan/Permodelan.png" alt="" width="80%" />
+                    </div>
+                    <a href="" class="block font-bold text-white hover:text-blue-200 text-lg mb-2">Permodelan dan
+                        Informasi Bangunan</a>
+                    <a href="" class="font-normal text-sm text-slate-200">Details</a>
+                </div>
+                <!-- card Permodelan dan Informasi Bangunan end -->
+
+                <!-- card Teknik Pengelasan -->
+                <div
+                    class="col-span-1 bg-gradient-to-r from-blue-600 to-blue-700 rounded-md p-4 flex flex-col items-center text-center">
+                    <div class="w-10 h-10 bg-white flex justify-center items-center rounded-md mb-4">
+                        <img src="../public/jurusan/TeknikPengelasan.png" alt="" width="80%" />
+                    </div>
+                    <a href="" class="block font-bold text-white hover:text-blue-200 text-lg mb-2">Teknik Pengelasan</a>
+                    <a href="#" class="font-normal text-sm text-slate-200">Details</a>
+                </div>
+                <!-- card Teknik Pengelasan end -->
+            </div>
+            <!-- content card end -->
+        </div>
+    </div>
+    <!-- Section Jurusan end -->
+
+
+    <!-- Extrakurikuler start -->
+    <div id="Extrakulikuler" class="w-full py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-2">
+            <!-- Header -->
+            <div class="mx-auto text-center mb-16 space-y-4 max-w-xl">
+                <h2 class="font-bold text-slate-800 text-2xl md:text-4xl capitalize">
+                    Pilihan Extrakurikuler di <span class="text-blue-600">Sekolah</span>Online
+                </h2>
+                <p class="text-slate-500 capitalize">
+                    Pilihan Extrakurikuler di SekolahOnline
+                </p>
+            </div>
+            <!-- Header end-->
+
+            <!-- content Extrakurikuler start-->
+            <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- card Extra 1 start -->
+                <div
+                    class="bg-white rounded-sm p-4 shadow-md shadow-slate-500 border-2 border-white hover:-translate-y-2 transition-transform duration-200">
+                    <div class="w-12 h-12 bg-white flex justify-center items-center rounded-md mb-4">
+                        <img src="/public/Extrakulikuler/pramuka.png" alt="" style="width: 80%;">
+                    </div>
+                    <a href="" class="block font-bold text-slate-800 text-xl mb-2 hover:text-blue-600">Praja Muda
+                        Karana</a>
+                    <p class="font-medium text-sm text-slate-500 mb-4">Pertama kali dibentuk tahun 800</p>
+                    <a href="" class="font-medium text-sm text-slate-400 capitalize hover:text-blue-600">Details</a>
+                </div>
+                <!-- card Extra 1 end -->
+
+                <!-- card Extra 2 start -->
+                <div
+                    class="bg-white rounded-sm p-4 shadow-md shadow-slate-500 border-2 border-white hover:-translate-y-2 transition-transform duration-200">
+                    <div class="w-12 h-12 bg-white flex justify-center items-center rounded-md mb-4">
+                        <img src="/public/Extrakulikuler/Pmi.png" alt="" style="width: 80%;">
+                    </div>
+                    <a href="" class="block font-bold text-slate-800 text-xl mb-2 hover:text-blue-600">Palang Merah
+                        Remaja</a>
+                    <p class="font-medium text-sm text-slate-500 mb-4">Pertama kali dibentuk tahun 900</p>
+                    <a href="" class="font-medium text-sm text-slate-400 capitalize hover:text-blue-600">Details</a>
+                </div>
+                <!-- card Extra 2 end -->
+
+                <!-- card Extra 3 start -->
+                <div
+                    class="bg-white rounded-sm p-4 shadow-md shadow-slate-500 border-2 border-white hover:-translate-y-2 transition-transform duration-200">
+                    <div class="w-12 h-12 bg-white flex justify-center items-center rounded-md mb-4">
+                        <img src="/public/Extrakulikuler/PecintaAlam.jpg" alt="" style="width: 80%;">
+                    </div>
+                    <a href="" class="block font-bold text-slate-800 text-xl mb-8 hover:text-blue-600">Pecinta Alam</a>
+                    <p class="font-medium text-sm text-slate-500 mb-10">Pertama kali dibentuk tahun 1400</p>
+                    <a href="" class="font-medium text-sm text-slate-400 capitalize hover:text-blue-600">Details</a>
+                </div>
+                <!-- card Extra 3 end -->
+
+                <!-- card Extra 4 start -->
+                <div
+                    class="bg-white rounded-sm p-4 shadow-md shadow-slate-500 border-2 border-white hover:-translate-y-2 transition-transform duration-200">
+                    <div class="w-12 h-12 bg-white flex justify-center items-center rounded-md mb-4">
+                        <img src="/public/Extrakulikuler/Sinematogrphy.png" alt="" style="width: 80%;">
+                    </div>
+                    <a href="" class="block font-bold text-slate-800 text-xl mb-8 hover:text-blue-600">Sinematografi</a>
+                    <p class="font-medium text-sm text-slate-500 mb-10">Pertama kali dibentuk tahun 1900</p>
+                    <a href="" class="font-medium text-sm text-slate-400 capitalize hover:text-blue-600">Details</a>
+                </div>
+                <!-- card Extra 4 end -->
+            </div>
+            <!-- content Extrakurikuler end-->
+        </div>
+    </div>
+    <!-- Extrakurikuler end -->
+
+    <!-- Dokumentasi start -->
+    <div id="dokumentasi" class="w-full py-20 bg-blue-600">
+        <div class="container mx-auto flex flex-col items-center justify-center px-2 md:px-0">
+            <!-- Header -->
+            <div class="mx-auto text-center mb-16 space-y-4 max-w-xl">
+                <h2 class="font-bold text-white text-2xl md:text-4xl capitalize">
+                    Foto Dokumentasi Kegiatan SekolahOnline
+                </h2>
+            </div>
+            <!-- Header end-->
+
+            <!-- Content start -->
+            <div class="w-[90%] px-2 relative md:mb-40">
+                <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-4 z-10"
+                    id="leftBtn">
+                    &lt;
+                </button>
+                <div class="w-full relative h-[350px] overflow-hidden cursor-pointer mx-auto galleryImage">
+                    <div class="absolute flex gap-3" id="gallery">
+
+                        <!-- card 1 -->
+                        <div class="w-[220px] flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+                            <div
+                                class="w-full rounded-sm h-[350px] bg-[url('../public/img/001.jpg')] bg-cover flex items-end">
+                                <div class="bg-slate-200/70 w-full h-1/3 pt-2 pb-3 px-4">
+                                    <h3 class="font-bold text-slate-800 text-xl mb-2">Meja Karya Salah Satu Siswa</h3>
+                                    <p class="text-slate-700 font-normal text-sm">SekolahOnline</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 1 end -->
+
+                        <!-- card 2 -->
+                        <div class="w-[220px] flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+                            <div
+                                class="w-full rounded-sm h-[350px] bg-[url('../public/img/002.jpg')] bg-cover flex items-end">
+                                <div class="bg-slate-200/70 w-full h-1/3 pt-2 pb-3 px-4">
+                                    <h3 class="font-bold text-slate-800 text-xl mb-2">Laboratorium Siswa SekolahOnline
+                                    </h3>
+                                    <p class="text-slate-700 font-normal text-sm">SekolahOnline</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 2 end -->
+
+                        <!-- card 3 -->
+                        <div class="w-[220px] flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+                            <div
+                                class="w-full rounded-sm h-[350px] bg-[url('../public/img/003.jpg')] bg-cover flex items-end">
+                                <div class="bg-slate-200/70 w-full h-1/3 pt-2 pb-3 px-4">
+                                    <h3 class="font-bold text-slate-800 text-xl mb-2">Kegiatan Ekstrakurikuler</h3>
+                                    <p class="text-slate-700 font-normal text-sm">SekolahOnline</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 3 end -->
+
+                        <!-- card 4 -->
+                        <div class="w-[220px] flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+                            <div
+                                class="w-full rounded-sm h-[350px] bg-[url('../public/img/001.jpg')] bg-cover flex items-end">
+                                <div class="bg-slate-200/70 w-full h-1/3 pt-2 pb-3 px-4">
+                                    <h3 class="font-bold text-slate-800 text-xl mb-2">Proyek Akhir Siswa</h3>
+                                    <p class="text-slate-700 font-normal text-sm">SekolahOnline</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 4 end -->
+
+                        <!-- card 5 -->
+                        <div class="w-[220px] flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+                            <div
+                                class="w-full rounded-sm h-[350px] bg-[url('../public/img/002.jpg')] bg-cover flex items-end">
+                                <div class="bg-slate-200/70 w-full h-1/3 pt-2 pb-3 px-4">
+                                    <h3 class="font-bold text-slate-800 text-xl mb-2">Kunjungan Industri</h3>
+                                    <p class="text-slate-700 font-normal text-sm">SekolahOnline</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 5 end -->
+
+                        <!-- card 6 -->
+                        <div class="w-[220px] flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+                            <div
+                                class="w-full rounded-sm h-[350px] bg-[url('../public/img/003.jpg')] bg-cover flex items-end">
+                                <div class="bg-slate-200/70 w-full h-1/3 pt-2 pb-3 px-4">
+                                    <h3 class="font-bold text-slate-800 text-xl mb-2">Workshop di Sekolah</h3>
+                                    <p class="text-slate-700 font-normal text-sm">SekolahOnline</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 6 end -->
+
+                        <!-- card 7 -->
+                        <div class="w-[220px] flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+                            <div
+                                class="w-full rounded-sm h-[350px] bg-[url('../public/img/001.jpg')] bg-cover flex items-end">
+                                <div class="bg-slate-200/70 w-full h-1/3 pt-2 pb-3 px-4">
+                                    <h3 class="font-bold text-slate-800 text-xl mb-2">Siswa Berprestasi</h3>
+                                    <p class="text-slate-700 font-normal text-sm">SekolahOnline</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 7 end -->
+
+                        <!-- card 8 -->
+                        <div class="w-[220px] flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+                            <div
+                                class="w-full rounded-sm h-[350px] bg-[url('../public/img/002.jpg')] bg-cover flex items-end">
+                                <div class="bg-slate-200/70 w-full h-1/3 pt-2 pb-3 px-4">
+                                    <h3 class="font-bold text-slate-800 text-xl mb-2">Pameran Seni</h3>
+                                    <p class="text-slate-700 font-normal text-sm">SekolahOnline</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 8 end -->
+
+                        <!-- card 9 -->
+                        <div class="w-[220px] flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+                            <div
+                                class="w-full rounded-sm h-[350px] bg-[url('../public/img/003.jpg')] bg-cover flex items-end">
+                                <div class="bg-slate-200/70 w-full h-1/3 pt-2 pb-3 px-4">
+                                    <h3 class="font-bold text-slate-800 text-xl mb-2">Pendidikan Luar Kelas</h3>
+                                    <p class="text-slate-700 font-normal text-sm">SekolahOnline</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 9 end -->
+
+                        <!-- card 10 -->
+                        <div class="w-[220px] flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+                            <div
+                                class="w-full rounded-sm h-[350px] bg-[url('../public/img/001.jpg')] bg-cover flex items-end">
+                                <div class="bg-slate-200/70 w-full h-1/3 pt-2 pb-3 px-4">
+                                    <h3 class="font-bold text-slate-800 text-xl mb-2">Proyek Teknologi</h3>
+                                    <p class="text-slate-700 font-normal text-sm">SekolahOnline</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 10 end -->
+
+                        <!-- card 11 -->
+                        <div class="w-[220px] flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+                            <div
+                                class="w-full rounded-sm h-[350px] bg-[url('../public/img/002.jpg')] bg-cover flex items-end">
+                                <div class="bg-slate-200/70 w-full h-1/3 pt-2 pb-3 px-4">
+                                    <h3 class="font-bold text-slate-800 text-xl mb-2">Presentasi Proyek</h3>
+                                    <p class="text-slate-700 font-normal text-sm">SekolahOnline</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 11 end -->
+
+                        <!-- card 12 -->
+                        <div class="w-[220px] flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+                            <div
+                                class="w-full rounded-sm h-[350px] bg-[url('../public/img/003.jpg')] bg-cover flex items-end">
+                                <div class="bg-slate-200/70 w-full h-1/3 pt-2 pb-3 px-4">
+                                    <h3 class="font-bold text-slate-800 text-xl mb-2">Kegiatan Sosial</h3>
+                                    <p class="text-slate-700 font-normal text-sm">SekolahOnline</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 12 end -->
+
+                    </div>
+                </div>
+                <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-4 z-10"
+                    id="rightBtn">
+                    &gt;
+                </button>
+            </div>
+            <!-- Content End -->
+
+        </div>
+    </div>
+    <!-- Dokumentasi end -->
+
+    <!-- Berita start -->
+    <div id="berita" class="w-full py-20">
+        <div class="container mx-auto px-4">
+            <!-- Header -->
+            <div class="mx-auto text-center mb-16 space-y-4 max-w-xl">
+                <h2 class="font-bold to-slate-800 text-4xl capitalize">
+                    Berita Terbaru Di <span class="text-blue-600">Sekolah ini</span>
+                </h2>
+                <p class="text-slate-500 capitalize">
+                    Update berita terbaru di SekolahOnline
+                </p>
+            </div>
+            <!-- Header end -->
+
+            <!-- Content Berita -->
+            <div class="md:grid md:grid-cols-4 gap-4">
+                <!-- card 1 -->
+                <div class="mb-6 rounded-t-md overflow-hidden">
+                    <div class="mb-4 w-full h-[180px] overflow-hidden">
+                        <img src="../public/Berita/01.jpg" alt=""
+                            class="w-full h-full object-cover hover:scale-110 transition-all duration-500">
+                    </div>
+                    <p class="text-slate-500 font-semibold text-sm mb-2">13 December 2023 </p>
+                    <a href=""
+                        class="line-clamp-2 font-bold text-slate-800 text-xl mb-2 hover:text-blue-600">Transformasi
+                        Digital di SekolahOnline</a>
+                    <p class="text-slate-500 font-normal text-sm mb-4">By Admin</p>
+                    <a href="" class="font-semibold text-blue-600">Baca Selengkapnya</a>
+                </div>
+                <!-- card 1 end -->
+
+                <!-- card 2 -->
+                <div class="mb-6 rounded-t-md overflow-hidden">
+                    <div class="mb-4 w-full h-[180px] overflow-hidden">
+                        <img src="../public/Berita/02.jpg" alt=""
+                            class="w-full h-full object-cover hover:scale-110 transition-all duration-500">
+                    </div>
+                    <p class="text-slate-500 font-semibold text-sm mb-2">13 December 2023 </p>
+                    <a href="" class="line-clamp-2 font-bold text-slate-800 text-xl mb-2 hover:text-blue-600">Peluncuran
+                        Program Kejuruan Baru di SekolahOnline</a>
+                    <p class="text-slate-500 font-normal text-sm mb-4">By Admin</p>
+                    <a href="" class="font-semibold text-blue-600">Baca Selengkapnya</a>
+                </div>
+                <!-- card 2 end -->
+
+                <!-- card 3 -->
+                <div class="mb-6 rounded-t-md overflow-hidden">
+                    <div class="mb-4 w-full h-[180px] overflow-hidden">
+                        <img src="../public/Berita/03.jpg" alt=""
+                            class="w-full h-full object-cover hover:scale-110 transition-all duration-500">
+                    </div>
+                    <p class="text-slate-500 font-semibold text-sm mb-2">13 December 2023 </p>
+                    <a href="" class="line-clamp-2 font-bold text-slate-800 text-xl mb-2 hover:text-blue-600">Metode
+                        Pengajaran Inovatif di SekolahOnline</a>
+                    <p class="text-slate-500 font-normal text-sm mb-4">By Admin</p>
+                    <a href="" class="font-semibold text-blue-600">Baca Selengkapnya</a>
+                </div>
+                <!-- card 3 end -->
+
+                <!-- card 4 -->
+                <div class="mb-6 rounded-t-md overflow-hidden">
+                    <div class="mb-4 w-full h-[180px] overflow-hidden">
+                        <img src="../public/Berita/04.jpeg" alt=""
+                            class="w-full h-full object-cover hover:scale-110 transition-all duration-500">
+                    </div>
+                    <p class="text-slate-500 font-semibold text-sm mb-2">13 December 2023 </p>
+                    <a href=""
+                        class="line-clamp-2 font-bold text-slate-800 text-xl mb-2 hover:text-blue-600">SekolahOnline
+                        Menyelenggarakan Kompetisi Keterampilan Regional</a>
+                    <p class="text-slate-500 font-normal text-sm mb-4">By Admin</p>
+                    <a href="" class="font-semibold text-blue-600">Baca Selengkapnya</a>
+                </div>
+                <!-- card 4 end -->
+
+                <!-- card 5 -->
+                <div class="mb-6 rounded-t-md overflow-hidden">
+                    <div class="mb-4 w-full h-[180px] overflow-hidden">
+                        <img src="../public/Berita/05.jpg" alt=""
+                            class="w-full h-full object-cover hover:scale-110 transition-all duration-500">
+                    </div>
+                    <p class="text-slate-500 font-semibold text-sm mb-2">13 December 2023 </p>
+                    <a href="" class="line-clamp-2 font-bold text-slate-800 text-xl mb-2 hover:text-blue-600">Inisiatif
+                        Ramah Lingkungan: SekolahOnline Menjadi Lebih Hijau</a>
+                    <p class="text-slate-500 font-normal text-sm mb-4">By Admin</p>
+                    <a href="" class="font-semibold text-blue-600">Baca Selengkapnya</a>
+                </div>
+                <!-- card 5 end -->
+
+                <!-- card 6 -->
+                <div class="mb-6 rounded-t-md overflow-hidden">
+                    <div class="mb-4 w-full h-[180px] overflow-hidden">
+                        <img src="../public/Berita/06.jpg" alt=""
+                            class="w-full h-full object-cover hover:scale-110 transition-all duration-500">
+                    </div>
+                    <p class="text-slate-500 font-semibold text-sm mb-2">13 December 2023 </p>
+                    <a href=""
+                        class="line-clamp-2 font-bold text-slate-800 text-xl mb-2 hover:text-blue-600">SekolahOnline
+                        Memperluas Kemitraan Internasional</a>
+                    <p class="text-slate-500 font-normal text-sm mb-4">By Admin</p>
+                    <a href="" class="font-semibold text-blue-600">Baca Selengkapnya</a>
+                </div>
+                <!-- card 6 end -->
+
+                <!-- card 7-->
+                <div class="mb-6 rounded-t-md overflow-hidden">
+                    <div class="mb-4 w-full h-[180px] overflow-hidden">
+                        <img src="../public/Berita/07.jpg" alt=""
+                            class="w-full h-full object-cover hover:scale-110 transition-all duration-500">
+                    </div>
+                    <p class="text-slate-500 font-semibold text-sm mb-2">13 December 2023 </p>
+                    <a href="" class="line-clamp-2 font-bold text-slate-800 text-xl mb-2 hover:text-blue-600">Beasiswa
+                        Baru Tersedia untuk Siswa SekolahOnline</a>
+                    <p class="text-slate-500 font-normal text-sm mb-4">By Admin</p>
+                    <a href="" class="font-semibold text-blue-600">Baca Selengkapnya</a>
+                </div>
+                <!-- card 7 end -->
+
+                <!-- card 8 -->
+                <div class="mb-6 rounded-t-md overflow-hidden">
+                    <div class="mb-4 w-full h-[180px] overflow-hidden">
+                        <img src="../public/Berita/08.jpg" alt=""
+                            class="w-full h-full object-cover hover:scale-110 transition-all duration-500">
+                    </div>
+                    <p class="text-slate-500 font-semibold text-sm mb-2">13 December 2023 </p>
+                    <a href="" class="line-clamp-2 font-bold text-slate-800 text-xl mb-2 hover:text-blue-600">Kisah
+                        Sukses Alumni: Dimana Mereka Sekarang?</a>
+                    <p class="text-slate-500 font-normal text-sm mb-4">By Admin</p>
+                    <a href="" class="font-semibold text-blue-600">Baca Selengkapnya</a>
+                </div>
+                <!-- card 8 end -->
+
+            </div>
+            <!-- Content Berita end -->
+
+            <!-- button start -->
+            <div class="bg-blue-50 rounded-md py-6 mt-12 flex justify-center">
+                <a href=""
+                    class="inline-block bg-blue-600 text-white py-3 px-6 border border-blue-600 font-bold text-center text-sm rounded-sm hover:bg-transparent hover:text-blue-600 transition-all duration-500">Semua
+                    Berita</a>
+            </div>
+            <!-- button end -->
+
+        </div>
+    </div>
+    <!-- Berita end -->
+
+    <!-- footer start -->
+    <footer class="w-full py-12 bg-blue-600">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row md:space-x-2 space-y-3 md:space-y-0 justify-between items-center">
+                <!-- Header -->
+                <div class="w-full md:w-1/3 text-center md:text-left">
+                    <h2 class="font-bold text-2xl text-white mb-2">SekolahOnline</h2>
+                    <p class="text-slate-100 text-sm leading-relaxed font-medium">
+                        Sekolah adalah tempat mencetak penerus bangsa yang berkualitas dan berprestasi disegala bidang
+                        yang dapat bersaing di dunia internasional
+                    </p>
+                </div>
+                <!-- Header -->
+
+                <!-- Content Start -->
+                <div class="w-full md:w-1/2">
+                    <div class="flex justify-center md:justify-end mb-4">
+                        <!-- Berikan link di href -->
+                        <a href="https://instagram.com/fata.zkrilllah" target="_blank"
+                            class="w-9 h-9 rounded-full bg-slate-100 text-blue-600 flex justify-center items-center mr-1">
+                            <svg width="20" class="fill-red-600" role="img" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Instagram</title>
+                                <path
+                                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+                            </svg>
+                        </a>
+                        <!-- Berikan link di href -->
+                        <a href="https://facebook.com" target="_blank"
+                            class="w-9 h-9 rounded-full bg-slate-100 text-blue-600 flex justify-center items-center mr-1">
+                            <svg width="20" class="fill-blue-600" role="img" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Facebook</title>
+                                <path
+                                    d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.693.748c-.158.309-.236.729-.236 1.261v2.66h3.399l-.443 3.667h-2.956v7.98H9.101z" />
+                            </svg>
+                        </a>
+                        <!-- Berikan link di href -->
+                        <a href="https://twitter.com" target="_blank"
+                            class="w-9 h-9 rounded-full bg-slate-100 text-blue-600 flex justify-center items-center mr-1">
+                            <svg width="20" class="fill-blue-400" role="img" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Twitter</title>
+                                <path
+                                    d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.724-.951.566-2.005.978-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.723 0-4.928 2.205-4.928 4.924 0 .39.044.765.127 1.125C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.214 2.191 4.099-.807-.026-1.566-.248-2.228-.616v.061c0 2.386 1.698 4.374 3.946 4.827-.413.112-.849.172-1.296.172-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.318-3.809 2.104-6.102 2.104-.39 0-.779-.023-1.17-.067 2.189 1.393 4.768 2.209 7.557 2.209 9.054 0 14.009-7.496 14.009-13.986 0-.21 0-.42-.015-.63.961-.69 1.8-1.56 2.46-2.548l-.047-.02z" />
+                            </svg>
+                        </a>
+                        <!-- Berikan link di href -->
+                        <a href="https://linkedin.com" target="_blank"
+                            class="w-9 h-9 rounded-full bg-slate-100 text-blue-600 flex justify-center items-center">
+                            <svg width="20" class="fill-blue-900" role="img" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>LinkedIn</title>
+                                <path
+                                    d="M20.447 20.452H16.92v-5.569c0-1.327-.027-3.037-1.85-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.406V9h3.355v1.561h.048c.467-.884 1.607-1.82 3.305-1.82 3.533 0 4.182 2.326 4.182 5.35v6.36zM5.337 7.433a1.946 1.946 0 1 1 0-3.891 1.946 1.946 0 0 1 0 3.89zM7.121 20.452H3.554V9h3.567v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.723v20.555C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.278V1.723C24 .774 23.2 0 22.225 0z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-white font-medium text-base md:text-right max-w-xl text-center">Dibuat oleh <a
+                            href="https://instagram.com/fata.zkrlh" target="_blank" class="font-bold text-blue-300">Fata
+                            Zikrillah</a>
+                        <span class="block">Menggunakan <a href="https://tailwindcss.com/" target="_blank"
+                                class="font-bold text-sky-200">tailwindcss</a> & <a
+                                class="font-bold text-yellow-200 cursor-pointer">Js</a></span> @2024
+                    </p>
+                </div>
+                <!-- Content End -->
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main/main.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- 
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+-->
