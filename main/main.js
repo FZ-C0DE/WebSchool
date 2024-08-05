@@ -98,8 +98,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // 
-// 
-// 
+// YANG DIBAWAH INI ADALAH JS DARI AI JADI HARAP MAKLUM DAH PENING
+// MASIH PEMULA GUESSSS
 
 // js alasan kenapa start jika todak perlu jadikan coment saja
 window.addEventListener('resize', function () {
